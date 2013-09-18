@@ -1,0 +1,9 @@
+include AUTHORS
+include LICENSE
+include DESCRIPTION
+include CHANGELOG.txt
+include README.md
+graft sagepay
+global-exclude *.orig *.pyc *.log *.swp
+prune sagepay/tests/coverage
+prune sagepay/.ropeproject
