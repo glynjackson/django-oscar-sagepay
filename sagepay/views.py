@@ -9,8 +9,8 @@ from oscar.apps.payment.forms import BillingAddressForm
 from oscar.apps.order.models import ShippingAddress
 from oscar.apps.address.models import UserAddress
 
-from luggagedepartment.apps.sagepay.facade import Facade
-from luggagedepartment.apps.sagepay.forms import SagePayForm
+from .facade import Facade
+from .forms import SagePayForm
 
 
 class SagePayDetailsView(OscarPaymentDetailsView):
