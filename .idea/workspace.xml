@@ -2,25 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="764ebb30-bb11-4618-9cba-fcf95e428004" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_requirements.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.rst" afterPath="$PROJECT_DIR$/README.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sagepay/__init__.py" afterPath="$PROJECT_DIR$/sagepay/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sagepay/models.py" afterPath="$PROJECT_DIR$/sagepay/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setup.py" afterPath="$PROJECT_DIR$/setup.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sagepay/views.py" afterPath="$PROJECT_DIR$/sagepay/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/makefile" afterPath="$PROJECT_DIR$/makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="django-oscar-sagepay.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="764ebb30-bb11-4618-9cba-fcf95e428004" time="1379946784491" ignored="false" />
     <file path="/setup.py" changelist="764ebb30-bb11-4618-9cba-fcf95e428004" time="1379505206662" ignored="false" />
     <file path="/requirements.txt" changelist="764ebb30-bb11-4618-9cba-fcf95e428004" time="1379509194294" ignored="false" />
-    <file path="/README.rst" changelist="764ebb30-bb11-4618-9cba-fcf95e428004" time="1379509436311" ignored="false" />
+    <file path="/README.rst" changelist="764ebb30-bb11-4618-9cba-fcf95e428004" time="1379948159642" ignored="false" />
     <file path="$PROJECT_DIR$/Makefile" changelist="764ebb30-bb11-4618-9cba-fcf95e428004" time="1379520684679" ignored="false" />
     <file path="/manage.py" changelist="764ebb30-bb11-4618-9cba-fcf95e428004" time="1379521967818" ignored="false" />
     <file path="/settings.py" changelist="764ebb30-bb11-4618-9cba-fcf95e428004" time="1379521981924" ignored="false" />
+    <file path="/__init__.py" changelist="764ebb30-bb11-4618-9cba-fcf95e428004" time="1379948722226" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +34,40 @@
     <favorites_list name="django-oscar-sagepay" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="setup.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/setup.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="42" column="28" selection-start="1226" selection-end="1226" vertical-scroll-proportion="-8.84">
+              <folding>
+                <element signature="e#940#949#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="makefile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/makefile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="21" selection-start="239" selection-end="239" vertical-scroll-proportion="-3.1730769">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="6" selection-start="144" selection-end="144" vertical-scroll-proportion="0.36697248">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -58,12 +86,15 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/setup.py" />
-        <option value="$PROJECT_DIR$/README.rst" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/Makefile" />
         <option value="$PROJECT_DIR$/sandbox/urls.py" />
         <option value="$PROJECT_DIR$/sandbox/manage.py" />
         <option value="$PROJECT_DIR$/sandbox/settings.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/sagepay/__init__.py" />
+        <option value="$PROJECT_DIR$/README.rst" />
+        <option value="$PROJECT_DIR$/makefile" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -143,13 +174,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1280" y="0" width="1280" height="800" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959481" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959481" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -225,16 +256,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="31" selection-start="2050" selection-end="2072" vertical-scroll-proportion="0.77537435" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="0" selection-start="1525" selection-end="1525" vertical-scroll-proportion="-17.44" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../luggagedepartment/luggagedepartment/settings/settingsBase.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="162" column="0" selection-start="3898" selection-end="4720" vertical-scroll-proportion="0.76038337" />
@@ -260,22 +281,89 @@
         <state line="9" column="39" selection-start="241" selection-end="241" vertical-scroll-proportion="0.19169329" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/makefile">
+    <entry file="file://$PROJECT_DIR$/../luggagedepartment/luggagedepartment/settings/settingsSagePay.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="426" selection-end="426" vertical-scroll-proportion="0.3505843" />
+        <state line="2" column="0" selection-start="2" selection-end="186" vertical-scroll-proportion="0.04587156">
+          <folding />
+        </state>
       </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../luggagedepartment/luggagedepartment/apps/checkout/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="8" selection-start="0" selection-end="124" vertical-scroll-proportion="0.09174312">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MANIFEST.in">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../django-time-out/time_out/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="46" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sagepay/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="46" selection-end="46" vertical-scroll-proportion="0.047694754">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="292" selection-end="292" vertical-scroll-proportion="0.40669855">
+        <state line="18" column="0" selection-start="310" selection-end="310" vertical-scroll-proportion="0.430622">
           <folding />
         </state>
       </provider>
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../django-time-out/README.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="12" selection-start="224" selection-end="224" vertical-scroll-proportion="0.23400936">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="447" selection-end="447" vertical-scroll-proportion="0.35771066">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="28" selection-start="1226" selection-end="1226" vertical-scroll-proportion="-8.84">
+          <folding>
+            <element signature="e#940#949#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="21" selection-start="239" selection-end="239" vertical-scroll-proportion="-3.1730769">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="6" selection-start="144" selection-end="144" vertical-scroll-proportion="0.36697248">
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
