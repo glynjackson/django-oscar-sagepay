@@ -1,5 +1,7 @@
+
+=================================================
 SagePay payment gateway package for django-oscar
-================================================
+=================================================
 
 
 WARNING THIS PROJECT IS NOT COMPLETE! I'M IN THE PROCESS OF DEVELOPING THIS PLUGIN!
@@ -115,8 +117,9 @@ Sandbox
 To run the plugin in sandbox mode please perform the following steps
 
 .. code-block:: bash
-    git install
-    virtualenv django-env
-    source django-env/bin/activate
-    make sandbox
-    sandbox/manage.py runserver
+
+    $ git install
+    $ virtualenv django-env
+    $ source django-env/bin/activate
+    $ make sandbox
+    $ sandbox/manage.py runserver
