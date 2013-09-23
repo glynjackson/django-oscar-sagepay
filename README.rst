@@ -110,11 +110,13 @@ If you want to contribute to this project, please perform the following steps
     # Send us a pull request for your feature branch
 
 Sandbox
------
+-------
 
-git install
-in terimal
-virtualenv django-env
-source django-env/bin/activate
-make sandbox
-sandbox/manage.py runserver
+To run the plugin in sandbox mode please perform the following steps
+
+.. code-block:: bash
+    git install
+    virtualenv django-env
+    source django-env/bin/activate
+    make sandbox
+    sandbox/manage.py runserver
