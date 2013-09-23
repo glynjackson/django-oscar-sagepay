@@ -70,3 +70,13 @@ If you want to contribute to this project, please perform the following steps
     $ git add . && git commit
     $ git push -u origin feature_branch
     # Send us a pull request for your feature branch
+
+Sandbox
+-----
+
+git install
+in terimal
+virtualenv django-env
+source django-env/bin/activate
+make sandbox
+sandbox/manage.py runserver

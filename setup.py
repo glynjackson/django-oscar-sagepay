@@ -45,13 +45,23 @@ setup(
     long_description=read('README.rst'),
     license='The MIT License',
     platforms=['OS Independent'],
-    keywords='sagepay, django, oscar, payment gateway, ecommerce',
+    keywords='SagePay, django, Oscar',
     author='Glyn Jackson',
-    author_email='me.org',
+    author_email='me@glynjackson.org',
     url="https://https://github.com/sparky300/django-oscar-sagepay",
     packages=find_packages(),
     include_package_data=True,
+     # See http://pypi.python.org/pypi?%3Aaction=list_classifiers
+    classifiers=[
+        'Development Status :: 4 - Beta',
+        'Environment :: Web Environment',
+        'Framework :: Django',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: MIT License',
+        'Operating System :: Unix',
+        'Programming Language :: Python',
+        'Topic :: Other/Nonlisted Topic'],
     install_requires=[
-        'django',
+        'django-oscar>=0.5,<0.6',
     ],
 )
