@@ -103,6 +103,7 @@ If you want to contribute to this project, please perform the following steps
     $ mkvirtualenv -p python2.7 django-oscar-sagepay
     $ python setup.py install
     $ pip install -r dev_requirements.txt
+jackrratt
 
     $ git co -b feature_branch master
     # Implement your feature and tests
