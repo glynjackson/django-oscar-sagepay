@@ -49,7 +49,7 @@ setup(
     author='Glyn Jackson',
     author_email='me@glynjackson.org',
     url="https://https://github.com/sparky300/django-oscar-sagepay",
-    packages=find_packages(),
+    packages=find_packages(exclude=['sandbox*', 'tests*']),
     include_package_data=True,
      # See http://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
@@ -62,6 +62,7 @@ setup(
         'Programming Language :: Python',
         'Topic :: Other/Nonlisted Topic'],
     install_requires=[
-        'django-oscar>=0.5,<0.6',
+        'django-oscar>=0.5.1',
+        'jsonfield==0.9.19',
     ],
 )

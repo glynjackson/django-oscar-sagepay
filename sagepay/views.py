@@ -15,7 +15,7 @@ from .forms import SagePayForm
 
 class SagePayDetailsView(OscarPaymentDetailsView):
     """
-    For taking the details of payment and creating the order
+    For taking the details of payment and creating the order.
     See: https://django-oscar.readthedocs.org/en/latest/ref/apps/checkout.html?highlight=checkout#oscar.apps.checkout.views.PaymentDetailsView
     """
 

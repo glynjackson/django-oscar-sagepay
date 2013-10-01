@@ -1,15 +1,6 @@
 from django import forms
 from oscar.apps.payment.forms import BankcardForm
 
-
-
-
-
-
-
-
-
-
 class CardHolder(forms.CharField):
 
     def __init__(self, *args, **kwargs):
@@ -30,5 +21,4 @@ class SagePayForm(BankcardForm):
 
 
     class Meta(BankcardForm.Meta):
-
         fields = ('card_holder', 'number', 'start_month', 'expiry_month', 'ccv')

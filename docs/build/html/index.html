@@ -23,7 +23,8 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="SagePay payment gateway package for django-oscar 0.1.0 documentation" href="#" /> 
+    <link rel="top" title="SagePay payment gateway package for django-oscar 0.1.0 documentation" href="#" />
+    <link rel="next" title="Sage Pay Test Credit Card Numbers" href="sandbox.html" /> 
   </head>
   <body>
     <div class="related">
@@ -32,6 +33,9 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="sandbox.html" title="Sage Pay Test Credit Card Numbers"
+             accesskey="N">next</a> |</li>
         <li><a href="#">SagePay payment gateway package for django-oscar 0.1.0 documentation</a> &raquo;</li> 
       </ul>
     </div>  
@@ -66,7 +70,7 @@ payment process to suit your business requirements.</p>
 <p>Add the <tt class="docutils literal"><span class="pre">sagepay</span></tt> URLs to your <tt class="docutils literal"><span class="pre">urls.py</span></tt>:</p>
 <div class="highlight-python"><pre>urlpatterns = patterns('',
   ...
-  url(r'^app-url/', include('sagepay.urls')),
+  url(r'^sagepay/', include('sagepay.urls')),
   )</pre>
 </div>
 <p>Then migrate your database:</p>
@@ -91,7 +95,7 @@ Once this has been created you will be given the following...</p>
 <span class="n">SAGEPAY_MODE</span> <span class="o">=</span> <span class="s">&#39;Simulator&#39;</span>
 </pre></div>
 </div>
-<p>Note that both currency and protocol are optional settings, if not set the defaults will be used.</p>
+<p>Note that both currency and protocol are optional settings, if not set defaults will be used.</p>
 </div>
 <div class="section" id="integration-into-checkout">
 <h2>Integration into checkout<a class="headerlink" href="#integration-into-checkout" title="Permalink to this headline">¶</a></h2>
@@ -106,7 +110,8 @@ See Oscar&#8217;s documentation on how to create a local version of the checkout
 </div>
 <p>Contents:</p>
 <div class="toctree-wrapper compound">
-<ul class="simple">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="sandbox.html">Sage Pay Test Credit Card Numbers</a></li>
 </ul>
 </div>
 </div>
@@ -139,6 +144,9 @@ See Oscar&#8217;s documentation on how to create a local version of the checkout
 <li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
 </ul>
 
+  <h4>Next topic</h4>
+  <p class="topless"><a href="sandbox.html"
+                        title="next chapter">Sage Pay Test Credit Card Numbers</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="_sources/index.txt"
@@ -167,6 +175,9 @@ See Oscar&#8217;s documentation on how to create a local version of the checkout
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              >index</a></li>
+        <li class="right" >
+          <a href="sandbox.html" title="Sage Pay Test Credit Card Numbers"
+             >next</a> |</li>
         <li><a href="#">SagePay payment gateway package for django-oscar 0.1.0 documentation</a> &raquo;</li> 
       </ul>
     </div>

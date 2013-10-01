@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Sage Pay Test Credit Card Numbers &mdash; SagePay payment gateway package for django-oscar 0.1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="SagePay payment gateway package for django-oscar 0.1.0 documentation" href="index.html" />
+    <link rel="prev" title="Welcome to SagePay payment gateway package for django-oscar’s documentation!" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to SagePay payment gateway package for django-oscar’s documentation!"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">SagePay payment gateway package for django-oscar 0.1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <p>To run the plugin in sandbox mode please perform the following steps:</p>
+<div class="highlight-python"><pre>$ virtualenv django-env
+$ source django-env/bin/activate
+$ make sandbox
+$ sandbox/manage.py runserver
+$ make clean</pre>
+</div>
+<div class="section" id="sage-pay-test-credit-card-numbers">
+<h1>Sage Pay Test Credit Card Numbers<a class="headerlink" href="#sage-pay-test-credit-card-numbers" title="Permalink to this headline">¶</a></h1>
+<p>This is a list of the SagePay test credit card numbers you can use to test transactions
+in SagePay Direct when in test and simulator mode.</p>
+<p>There are many different test credit card numbers available to use with the SagePay
+test server and at each stage you must ensure you enter the numbers and other details required correctly
+- failure to do so will return a Not Matched message.</p>
+<ul class="simple">
+<li>Visa - 4929000000006</li>
+<li>Visa Delta (Debit) - 4462000000000003</li>
+<li>Visa Electron UK Debit - 4917300000000008</li>
+<li>Mastercard - 5404000000000001</li>
+<li>UK Maestro - 5641820000000005</li>
+<li>International Maestro - 300000000000000004</li>
+<li>American Express - 374200000000004</li>
+<li>Japan Credit Bureau (JCB) - 3569990000000009</li>
+<li>Diners Club - 36000000000008</li>
+<li>Laser Cards - 6304990000000000044</li>
+</ul>
+<p>Please note that these Sage Pay test card numbers cannot be used on the live server,
+where a real debit or credit card must be used to put through a test transaction.</p>
+<ul class="simple">
+<li>Expiry Date: any date in the future</li>
+<li>CV2: 123</li>
+<li>Billing Address: 88 (you only have to use this on the first line)</li>
+<li>Billing Postcode: 412</li>
+<li>3D Secure Password: password (not used in version 0.1 of django-oscar-sagepay)</li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Welcome to SagePay payment gateway package for django-oscar&#8217;s documentation!</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/sandbox.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to SagePay payment gateway package for django-oscar’s documentation!"
+             >previous</a> |</li>
+        <li><a href="index.html">SagePay payment gateway package for django-oscar 0.1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, Glyn Jackson.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b2.
+    </div>
+  </body>
+</html>

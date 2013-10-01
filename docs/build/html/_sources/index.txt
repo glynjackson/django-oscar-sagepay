@@ -41,7 +41,7 @@ Add the ``sagepay`` URLs to your ``urls.py``::
 
       urlpatterns = patterns('',
         ...
-        url(r'^app-url/', include('sagepay.urls')),
+        url(r'^sagepay/', include('sagepay.urls')),
         )
 
 Then migrate your database::
@@ -72,7 +72,7 @@ Add the settings from the details you were given::
     SAGEPAY_MODE = 'Simulator'
 
 
-Note that both currency and protocol are optional settings, if not set the defaults will be used.
+Note that both currency and protocol are optional settings, if not set defaults will be used.
 
 
 --------------------------
@@ -91,13 +91,12 @@ Once PaymentDetailsView has been added in your checkout view add::
         pass
 
 
-
-
-
 Contents:
 
 .. toctree::
    :maxdepth: 2
+
+   sandbox
 
 
 
