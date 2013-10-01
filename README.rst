@@ -1,7 +1,7 @@
 
-==================================================================
-SagePay payment gateway package for django-oscar
-==================================================================
+==========================
+Oscar SagePay Integration
+==========================
 
 This package provides integration between django-oscar and the payment gateway SagePay UK
 
