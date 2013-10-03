@@ -47,6 +47,9 @@
             
   <div class="section" id="testing-in-sandbox">
 <h1>Testing in Sandbox<a class="headerlink" href="#testing-in-sandbox" title="Permalink to this headline">¶</a></h1>
+<p>At the time of writing this django-oscar does not have a pip install for version 0.6 or above. Because of this
+I have removed django-oscar from the setup.py list of requirements. You will need to first install
+Oscar 0.6 directly from github i.e. <tt class="docutils literal"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">git&#64;github.com:tangentlabs/django-oscar.git</span></tt>.</p>
 <p>To run the plugin in sandbox mode please perform the following steps:</p>
 <div class="highlight-python"><pre>$ virtualenv django-env
 $ source django-env/bin/activate

@@ -1,0 +1,34 @@
+Metadata-Version: 1.1
+Name: django-oscar-sagepay
+Version: 0.1.2
+Summary: This package provides integration between django-oscar and the payment gateway SagePay UK
+
+Home-page: https://https://github.com/sparky300/django-oscar-sagepay
+Author: Glyn Jackson
+Author-email: me@glynjackson.org
+License: The MIT License
+Description: ==========================
+        Oscar SagePay Integration
+        ==========================
+        
+        This package provides integration between django-oscar and the payment gateway SagePay UK
+        
+        
+        This project is a work in progress and still in development. It is intended for use with Django Oscar 0.6 or above.
+        
+        Documentation
+        --------------
+        
+        * Documentation_ - Read the Documentation
+        
+        .. _Documentation: http://sagepay-payment-gateway-package-for-django-oscar.readthedocs.org
+Keywords: SagePay,django,Oscar
+Platform: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Topic :: Other/Nonlisted Topic

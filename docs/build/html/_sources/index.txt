@@ -8,6 +8,8 @@ Welcome to SagePay payment gateway package for django-oscar's documentation!
 
 This package provides integration between ``django-oscar 0.6`` or above and `SagePay Direct`_ payment gateway.
 
+This project is a work in progress and still in development.
+
 A direct integration enables you to collect your customers' payment information
 on your own secure servers and securely pass card details across to SagePay to carry
 out authorisation and store them safely. This means that you can completely tailor the
@@ -55,7 +57,7 @@ Configuration Settings
 In order to test your integration first create a Sage Pay `Simulator Account`_.
 Once this has been created you will be given the following...
 
-.. _`Simulator Account`: https://test.sagepay.com/Simulator/
+.. _`Simulator Account`: https://support.sagepay.com/apply/simulator/requestAccount
 
 * Vendor Name
 * User Name
