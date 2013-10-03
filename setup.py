@@ -62,7 +62,7 @@ setup(
         'Programming Language :: Python',
         'Topic :: Other/Nonlisted Topic'],
     install_requires=[
-        'django-oscar>=0.5.1',
+        #'django-oscar>=0.6.0',
         'jsonfield==0.9.19',
     ],
 )

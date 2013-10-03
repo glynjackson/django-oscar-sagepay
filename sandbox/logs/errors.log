@@ -1,0 +1,971 @@
+ERROR 2013-10-03 19:16:12,625 base Internal Server Error: /catalogue/category/books/fiction_2/
+Traceback (most recent call last):
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/test/utils.py", line 66, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/test/utils.py", line 66, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/test/utils.py", line 66, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/test/utils.py", line 66, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/defaulttags.py", line 285, in render
+    return nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/defaulttags.py", line 189, in render
+    nodelist.append(node.render(context))
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 1114, in render
+    return func(*resolved_args, **resolved_kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-oscar/oscar/templatetags/product_tags.py", line 23, in render_product
+    return template_.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/test/utils.py", line 66, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 54, in render
+    result = self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/defaulttags.py", line 483, in render
+    six.iteritems(self.extra_context)])
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 578, in resolve
+    obj = self.var.resolve(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 728, in resolve
+    value = self._resolve_lookup(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 779, in _resolve_lookup
+    current = current()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-oscar/oscar/apps/catalogue/abstract_models.py", line 482, in primary_image
+    'original': self.get_missing_image(),
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-oscar/oscar/apps/catalogue/abstract_models.py", line 471, in get_missing_image
+    return MissingProductImage()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-oscar/oscar/apps/catalogue/abstract_models.py", line 977, in __init__
+    self.symlink_missing_image(media_file_path)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-oscar/oscar/apps/catalogue/abstract_models.py", line 990, in symlink_missing_image
+    settings.MEDIA_ROOT))
+ImproperlyConfigured: Please copy/symlink the 'missing image' image at /Users/user/Documents/workspace/django-oscar-sagepay/sandbox/public/media/image_not_found.jpg into your MEDIA_ROOT at /Users/user/Documents/workspace/django-oscar-sagepay/sandbox/public/media. This exception was raised because Oscar was unable to symlink it for you.
+ERROR 2013-10-03 19:16:16,797 base Internal Server Error: /catalogue/category/books_1/
+Traceback (most recent call last):
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/test/utils.py", line 66, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/test/utils.py", line 66, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/test/utils.py", line 66, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/test/utils.py", line 66, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/defaulttags.py", line 285, in render
+    return nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/defaulttags.py", line 189, in render
+    nodelist.append(node.render(context))
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 1114, in render
+    return func(*resolved_args, **resolved_kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-oscar/oscar/templatetags/product_tags.py", line 23, in render_product
+    return template_.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/test/utils.py", line 66, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 54, in render
+    result = self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/defaulttags.py", line 483, in render
+    six.iteritems(self.extra_context)])
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 578, in resolve
+    obj = self.var.resolve(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 728, in resolve
+    value = self._resolve_lookup(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 779, in _resolve_lookup
+    current = current()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-oscar/oscar/apps/catalogue/abstract_models.py", line 482, in primary_image
+    'original': self.get_missing_image(),
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-oscar/oscar/apps/catalogue/abstract_models.py", line 471, in get_missing_image
+    return MissingProductImage()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-oscar/oscar/apps/catalogue/abstract_models.py", line 977, in __init__
+    self.symlink_missing_image(media_file_path)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-oscar/oscar/apps/catalogue/abstract_models.py", line 990, in symlink_missing_image
+    settings.MEDIA_ROOT))
+ImproperlyConfigured: Please copy/symlink the 'missing image' image at /Users/user/Documents/workspace/django-oscar-sagepay/sandbox/public/media/image_not_found.jpg into your MEDIA_ROOT at /Users/user/Documents/workspace/django-oscar-sagepay/sandbox/public/media. This exception was raised because Oscar was unable to symlink it for you.
+ERROR 2013-10-03 19:18:23,331 base Internal Server Error: /catalogue/category/books/fiction_2/
+Traceback (most recent call last):
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/test/utils.py", line 66, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/test/utils.py", line 66, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/test/utils.py", line 66, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/test/utils.py", line 66, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/defaulttags.py", line 285, in render
+    return nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/defaulttags.py", line 189, in render
+    nodelist.append(node.render(context))
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 1114, in render
+    return func(*resolved_args, **resolved_kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-oscar/oscar/templatetags/product_tags.py", line 23, in render_product
+    return template_.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/test/utils.py", line 66, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 54, in render
+    result = self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/defaulttags.py", line 483, in render
+    six.iteritems(self.extra_context)])
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 578, in resolve
+    obj = self.var.resolve(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 728, in resolve
+    value = self._resolve_lookup(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 779, in _resolve_lookup
+    current = current()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-oscar/oscar/apps/catalogue/abstract_models.py", line 482, in primary_image
+    'original': self.get_missing_image(),
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-oscar/oscar/apps/catalogue/abstract_models.py", line 471, in get_missing_image
+    return MissingProductImage()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-oscar/oscar/apps/catalogue/abstract_models.py", line 977, in __init__
+    self.symlink_missing_image(media_file_path)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-oscar/oscar/apps/catalogue/abstract_models.py", line 990, in symlink_missing_image
+    settings.MEDIA_ROOT))
+ImproperlyConfigured: Please copy/symlink the 'missing image' image at /Users/user/Documents/workspace/django-oscar-sagepay/sandbox/public/media/image_not_found.jpg into your MEDIA_ROOT at /Users/user/Documents/workspace/django-oscar-sagepay/sandbox/public/media. This exception was raised because Oscar was unable to symlink it for you.
+ERROR 2013-10-03 19:19:50,646 base Internal Server Error: /catalogue/category/books/fiction_2/
+Traceback (most recent call last):
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/test/utils.py", line 66, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/test/utils.py", line 66, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/test/utils.py", line 66, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/test/utils.py", line 66, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/defaulttags.py", line 285, in render
+    return nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/defaulttags.py", line 189, in render
+    nodelist.append(node.render(context))
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 1114, in render
+    return func(*resolved_args, **resolved_kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-oscar/oscar/templatetags/product_tags.py", line 23, in render_product
+    return template_.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/test/utils.py", line 66, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 54, in render
+    result = self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/defaulttags.py", line 483, in render
+    six.iteritems(self.extra_context)])
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 578, in resolve
+    obj = self.var.resolve(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 728, in resolve
+    value = self._resolve_lookup(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 779, in _resolve_lookup
+    current = current()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-oscar/oscar/apps/catalogue/abstract_models.py", line 482, in primary_image
+    'original': self.get_missing_image(),
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-oscar/oscar/apps/catalogue/abstract_models.py", line 471, in get_missing_image
+    return MissingProductImage()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-oscar/oscar/apps/catalogue/abstract_models.py", line 977, in __init__
+    self.symlink_missing_image(media_file_path)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-oscar/oscar/apps/catalogue/abstract_models.py", line 990, in symlink_missing_image
+    settings.MEDIA_ROOT))
+ImproperlyConfigured: Please copy/symlink the 'missing image' image at /Users/user/Documents/workspace/django-oscar-sagepay/sandbox/media/image_not_found.jpg into your MEDIA_ROOT at /Users/user/Documents/workspace/django-oscar-sagepay/sandbox/media. This exception was raised because Oscar was unable to symlink it for you.
+ERROR 2013-10-03 19:21:57,576 base Internal Server Error: /catalogue/category/books/fiction_2/
+Traceback (most recent call last):
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/test/utils.py", line 66, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/test/utils.py", line 66, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/test/utils.py", line 66, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/test/utils.py", line 66, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/defaulttags.py", line 285, in render
+    return nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/defaulttags.py", line 189, in render
+    nodelist.append(node.render(context))
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 1114, in render
+    return func(*resolved_args, **resolved_kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-oscar/oscar/templatetags/product_tags.py", line 23, in render_product
+    return template_.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/test/utils.py", line 66, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 54, in render
+    result = self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/defaulttags.py", line 483, in render
+    six.iteritems(self.extra_context)])
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 578, in resolve
+    obj = self.var.resolve(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 728, in resolve
+    value = self._resolve_lookup(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 779, in _resolve_lookup
+    current = current()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-oscar/oscar/apps/catalogue/abstract_models.py", line 482, in primary_image
+    'original': self.get_missing_image(),
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-oscar/oscar/apps/catalogue/abstract_models.py", line 471, in get_missing_image
+    return MissingProductImage()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-oscar/oscar/apps/catalogue/abstract_models.py", line 977, in __init__
+    self.symlink_missing_image(media_file_path)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-oscar/oscar/apps/catalogue/abstract_models.py", line 990, in symlink_missing_image
+    settings.MEDIA_ROOT))
+ImproperlyConfigured: Please copy/symlink the 'missing image' image at /Users/user/Documents/workspace/django-oscar-sagepay/sandbox/public/media/image_not_found.jpg into your MEDIA_ROOT at /Users/user/Documents/workspace/django-oscar-sagepay/sandbox/public/media. This exception was raised because Oscar was unable to symlink it for you.
+ERROR 2013-10-03 19:24:14,987 base Internal Server Error: /catalogue/category/books/fiction_2/
+Traceback (most recent call last):
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/test/utils.py", line 66, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/test/utils.py", line 66, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/test/utils.py", line 66, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/test/utils.py", line 66, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/defaulttags.py", line 285, in render
+    return nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/defaulttags.py", line 189, in render
+    nodelist.append(node.render(context))
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 1114, in render
+    return func(*resolved_args, **resolved_kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-oscar/oscar/templatetags/product_tags.py", line 23, in render_product
+    return template_.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/test/utils.py", line 66, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 54, in render
+    result = self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/defaulttags.py", line 483, in render
+    six.iteritems(self.extra_context)])
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 578, in resolve
+    obj = self.var.resolve(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 728, in resolve
+    value = self._resolve_lookup(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 779, in _resolve_lookup
+    current = current()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-oscar/oscar/apps/catalogue/abstract_models.py", line 482, in primary_image
+    'original': self.get_missing_image(),
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-oscar/oscar/apps/catalogue/abstract_models.py", line 471, in get_missing_image
+    return MissingProductImage()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-oscar/oscar/apps/catalogue/abstract_models.py", line 977, in __init__
+    self.symlink_missing_image(media_file_path)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-oscar/oscar/apps/catalogue/abstract_models.py", line 990, in symlink_missing_image
+    settings.MEDIA_ROOT))
+ImproperlyConfigured: Please copy/symlink the 'missing image' image at /Users/user/Documents/workspace/django-oscar-sagepay/sandbox/public/media/image_not_found.jpg into your MEDIA_ROOT at /Users/user/Documents/workspace/django-oscar-sagepay/sandbox/public/media. This exception was raised because Oscar was unable to symlink it for you.
+ERROR 2013-10-03 19:25:12,466 base Internal Server Error: /catalogue/category/books/fiction_2/
+Traceback (most recent call last):
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/test/utils.py", line 66, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/test/utils.py", line 66, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/test/utils.py", line 66, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/test/utils.py", line 66, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/defaulttags.py", line 285, in render
+    return nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/defaulttags.py", line 189, in render
+    nodelist.append(node.render(context))
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 1114, in render
+    return func(*resolved_args, **resolved_kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-oscar/oscar/templatetags/product_tags.py", line 23, in render_product
+    return template_.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/test/utils.py", line 66, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/template_timings_panel/panels/TemplateTimings.py", line 92, in timing_hook
+    result = func(self, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 54, in render
+    result = self.nodelist.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/defaulttags.py", line 483, in render
+    six.iteritems(self.extra_context)])
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 578, in resolve
+    obj = self.var.resolve(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 728, in resolve
+    value = self._resolve_lookup(context)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 779, in _resolve_lookup
+    current = current()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-oscar/oscar/apps/catalogue/abstract_models.py", line 482, in primary_image
+    'original': self.get_missing_image(),
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-oscar/oscar/apps/catalogue/abstract_models.py", line 471, in get_missing_image
+    return MissingProductImage()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-oscar/oscar/apps/catalogue/abstract_models.py", line 977, in __init__
+    self.symlink_missing_image(media_file_path)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-oscar/oscar/apps/catalogue/abstract_models.py", line 990, in symlink_missing_image
+    settings.MEDIA_ROOT))
+ImproperlyConfigured: Please copy/symlink the 'missing image' image at /Users/user/Documents/workspace/django-oscar-sagepay/sandbox/public/media/image_not_found.jpg into your MEDIA_ROOT at /Users/user/Documents/workspace/django-oscar-sagepay/sandbox/public/media. This exception was raised because Oscar was unable to symlink it for you.
+ERROR 2013-10-03 19:30:42,865 base Internal Server Error: /checkout/payment-details/
+Traceback (most recent call last):
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/response.py", line 80, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/response.py", line 56, in resolve_template
+    return loader.select_template(template)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 188, in select_template
+    return get_template(template_name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 135, in find_template
+    source, display_name = loader(name, dirs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 157, in get_template_from_string
+    return Template(source, origin, name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/debug_toolbar/panels/template.py", line 37, in new_template_init
+    old_template_init(self, template_string, origin, name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 274, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 215, in do_extends
+    nodelist = parser.parse()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 274, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 190, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 274, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/defaulttags.py", line 1268, in url
+    viewname = parser.compile_filter(bits[1])
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 353, in compile_filter
+    return FilterExpression(token, self)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 570, in __init__
+    "from '%s'" % (token[upto:], token))
+TemplateSyntaxError: Could not parse the remainder: ':preview' from 'checkout:preview'. The syntax of 'url' changed in Django 1.5, see the docs.
+ERROR 2013-10-03 19:32:04,644 base Internal Server Error: /checkout/payment-details/
+Traceback (most recent call last):
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/response.py", line 80, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/response.py", line 56, in resolve_template
+    return loader.select_template(template)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 188, in select_template
+    return get_template(template_name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 135, in find_template
+    source, display_name = loader(name, dirs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 157, in get_template_from_string
+    return Template(source, origin, name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/debug_toolbar/panels/template.py", line 37, in new_template_init
+    old_template_init(self, template_string, origin, name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 274, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 215, in do_extends
+    nodelist = parser.parse()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 274, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 190, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 274, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/defaulttags.py", line 1268, in url
+    viewname = parser.compile_filter(bits[1])
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 353, in compile_filter
+    return FilterExpression(token, self)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 570, in __init__
+    "from '%s'" % (token[upto:], token))
+TemplateSyntaxError: Could not parse the remainder: ':preview' from 'checkout:preview'. The syntax of 'url' changed in Django 1.5, see the docs.
+ERROR 2013-10-03 19:32:12,813 base Internal Server Error: /checkout/payment-details/
+Traceback (most recent call last):
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/response.py", line 80, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/response.py", line 56, in resolve_template
+    return loader.select_template(template)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 188, in select_template
+    return get_template(template_name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 135, in find_template
+    source, display_name = loader(name, dirs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 157, in get_template_from_string
+    return Template(source, origin, name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/debug_toolbar/panels/template.py", line 37, in new_template_init
+    old_template_init(self, template_string, origin, name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 274, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 215, in do_extends
+    nodelist = parser.parse()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 274, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 190, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 274, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/defaulttags.py", line 1268, in url
+    viewname = parser.compile_filter(bits[1])
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 353, in compile_filter
+    return FilterExpression(token, self)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 570, in __init__
+    "from '%s'" % (token[upto:], token))
+TemplateSyntaxError: Could not parse the remainder: ':preview' from 'checkout:preview'. The syntax of 'url' changed in Django 1.5, see the docs.
+ERROR 2013-10-03 19:33:40,601 base Internal Server Error: /checkout/preview/
+Traceback (most recent call last):
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/response.py", line 80, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/response.py", line 56, in resolve_template
+    return loader.select_template(template)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 188, in select_template
+    return get_template(template_name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 135, in find_template
+    source, display_name = loader(name, dirs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 157, in get_template_from_string
+    return Template(source, origin, name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/debug_toolbar/panels/template.py", line 37, in new_template_init
+    old_template_init(self, template_string, origin, name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 274, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 215, in do_extends
+    nodelist = parser.parse()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 274, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 190, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 274, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/defaulttags.py", line 1268, in url
+    viewname = parser.compile_filter(bits[1])
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 353, in compile_filter
+    return FilterExpression(token, self)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 570, in __init__
+    "from '%s'" % (token[upto:], token))
+TemplateSyntaxError: Could not parse the remainder: ':payment-details' from 'checkout:payment-details'. The syntax of 'url' changed in Django 1.5, see the docs.
