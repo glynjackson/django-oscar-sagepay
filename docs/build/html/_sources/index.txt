@@ -15,12 +15,15 @@ on your own secure servers and securely pass card details across to SagePay to c
 out authorisation and store them safely. This means that you can completely tailor the
 payment process to suit your business requirements.
 
-To use SagePay Direct method you will need a 128-bit SSL certificate to secure your payment pages.
+.. Note::
 
-Note: There is currently no support for form or server integrations.
+    To use SagePay Direct method you will need a 128-bit SSL certificate to secure your payment pages.
+
+.. Note::
+
+    There is currently no support for form or server integrations.
 
 .. _`SagePay Direct`: http://www.sagepay.com
-
 
 Contents:
 
