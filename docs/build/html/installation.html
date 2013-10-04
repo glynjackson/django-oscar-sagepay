@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Installation Guide &mdash; SagePay payment gateway package for django-oscar 0.1.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="SagePay payment gateway package for django-oscar 0.1.1 documentation" href="index.html" />
+    <link rel="next" title="Testing in Sandbox" href="sandbox.html" />
+    <link rel="prev" title="Welcome to SagePay payment gateway package for django-oscar’s documentation!" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="sandbox.html" title="Testing in Sandbox"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to SagePay payment gateway package for django-oscar’s documentation!"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">SagePay payment gateway package for django-oscar 0.1.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="installation-guide">
+<h1>Installation Guide<a class="headerlink" href="#installation-guide" title="Permalink to this headline">¶</a></h1>
+<p>To get the latest stable release from PyPi:</p>
+<div class="highlight-python"><pre>$ pip install django-oscar-sagepay</pre>
+</div>
+<p>To get the latest commit from GitHub:</p>
+<div class="highlight-python"><pre>$ pip install -e git+git://https://github.com/sparky300/django-oscar-sagepay.git#egg=sagepay</pre>
+</div>
+<p>Add <tt class="docutils literal"><span class="pre">sagepay</span></tt> to your <tt class="docutils literal"><span class="pre">INSTALLED_APPS</span></tt>:</p>
+<div class="highlight-python"><pre>INSTALLED_APPS = (
+   ...,
+   'sagepay',
+   )</pre>
+</div>
+<p>Add the <tt class="docutils literal"><span class="pre">sagepay</span></tt> URLs to your <tt class="docutils literal"><span class="pre">urls.py</span></tt>:</p>
+<div class="highlight-python"><pre>urlpatterns = patterns('',
+  ...
+  url(r'^sagepay/', include('sagepay.urls')),
+  )</pre>
+</div>
+<p>Then migrate your database:</p>
+<div class="highlight-python"><pre>./manage.py migrate sagepay</pre>
+</div>
+<div class="section" id="configuration-settings">
+<h2>Configuration Settings<a class="headerlink" href="#configuration-settings" title="Permalink to this headline">¶</a></h2>
+<p>In order to test your integration first create a Sage Pay <a class="reference external" href="https://support.sagepay.com/apply/simulator/requestAccount">Simulator Account</a>.
+Once this has been created you will be given the following...</p>
+<ul class="simple">
+<li>Vendor Name</li>
+<li>User Name</li>
+<li>Password</li>
+</ul>
+<p>Add the settings from the details you were given:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">SAGEPAY_VENDOR</span> <span class="o">=</span> <span class="s">&#39;YOUR_VENDOR_NAME&#39;</span>
+<span class="n">SAGEPAY_PASSWORD</span> <span class="o">=</span> <span class="s">&#39;YOUR_PASSWORD&#39;</span>
+<span class="n">SAGEPAY_CURRENCY</span> <span class="o">=</span> <span class="s">&#39;GBP&#39;</span>
+<span class="n">SAGEPAY_VPS_PROTOCOL</span> <span class="o">=</span> <span class="s">&#39;2.23&#39;</span>
+<span class="c"># Options are Live, Test and Simulator</span>
+<span class="n">SAGEPAY_MODE</span> <span class="o">=</span> <span class="s">&#39;Simulator&#39;</span>
+</pre></div>
+</div>
+<p>Note that both currency and protocol are optional settings, if not set defaults will be used.</p>
+</div>
+<div class="section" id="integration-into-checkout">
+<h2>Integration into checkout<a class="headerlink" href="#integration-into-checkout" title="Permalink to this headline">¶</a></h2>
+<p>You&#8217;ll need to use a subclass of oscar.apps.checkout.views.PaymentDetailsView within your own checkout views.
+See Oscar&#8217;s documentation on how to create a local version of the checkout app.</p>
+<p>Once PaymentDetailsView has been added in your checkout view add:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">sagepay.views</span> <span class="kn">import</span> <span class="n">SagePayDetailsView</span>
+
+<span class="k">class</span> <span class="nc">PaymentDetailsView</span><span class="p">(</span><span class="n">SagePayDetailsView</span><span class="p">):</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Installation Guide</a><ul>
+<li><a class="reference internal" href="#configuration-settings">Configuration Settings</a></li>
+<li><a class="reference internal" href="#integration-into-checkout">Integration into checkout</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Welcome to SagePay payment gateway package for django-oscar&#8217;s documentation!</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="sandbox.html"
+                        title="next chapter">Testing in Sandbox</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/installation.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="sandbox.html" title="Testing in Sandbox"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to SagePay payment gateway package for django-oscar’s documentation!"
+             >previous</a> |</li>
+        <li><a href="index.html">SagePay payment gateway package for django-oscar 0.1.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, Glyn Jackson.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b2.
+    </div>
+  </body>
+</html>

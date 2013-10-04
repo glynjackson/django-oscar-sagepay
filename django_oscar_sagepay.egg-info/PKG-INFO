@@ -1,4 +1,4 @@
-Metadata-Version: 1.1
+Metadata-Version: 1.0
 Name: django-oscar-sagepay
 Version: 0.1.2
 Summary: This package provides integration between django-oscar and the payment gateway SagePay UK

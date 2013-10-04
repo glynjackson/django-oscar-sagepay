@@ -63,6 +63,7 @@ setup(
         'Topic :: Other/Nonlisted Topic'],
     install_requires=[
         #'django-oscar>=0.6.0',
+        'django-classy-tags>=0.3.0',
         'jsonfield==0.9.19',
     ],
 )

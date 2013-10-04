@@ -969,3 +969,186 @@ Traceback (most recent call last):
   File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 570, in __init__
     "from '%s'" % (token[upto:], token))
 TemplateSyntaxError: Could not parse the remainder: ':payment-details' from 'checkout:payment-details'. The syntax of 'url' changed in Django 1.5, see the docs.
+ERROR 2013-10-04 18:21:01,588 base Internal Server Error: /admin/auth/user/
+Traceback (most recent call last):
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 372, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 202, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1180, in changelist_view
+    self)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 73, in __init__
+    self.query_set = self.get_query_set(request)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 303, in get_query_set
+    use_distinct) = self.get_filters(request)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 101, in get_filters
+    raise SuspiciousOperation("Filtering by %s not allowed" % key)
+SuspiciousOperation: Filtering by password__startswith not allowed
+ERROR 2013-10-04 19:11:49,228 base Internal Server Error: /checkout/payment-details/
+Traceback (most recent call last):
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/response.py", line 80, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/response.py", line 56, in resolve_template
+    return loader.select_template(template)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 188, in select_template
+    return get_template(template_name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 135, in find_template
+    source, display_name = loader(name, dirs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 157, in get_template_from_string
+    return Template(source, origin, name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/debug_toolbar/panels/template.py", line 37, in new_template_init
+    old_template_init(self, template_string, origin, name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 274, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 215, in do_extends
+    nodelist = parser.parse()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 274, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/defaulttags.py", line 1046, in load
+    (taglib, e))
+TemplateSyntaxError: 'sagepay_tags' is not a valid tag library: Template library sagepay_tags not found, tried django.templatetags.sagepay_tags,django.contrib.admin.templatetags.sagepay_tags,django.contrib.flatpages.templatetags.sagepay_tags,django.contrib.staticfiles.templatetags.sagepay_tags,django_extensions.templatetags.sagepay_tags,debug_toolbar.templatetags.sagepay_tags,sagepay.templatetags.sagepay_tags,rosetta.templatetags.sagepay_tags,compressor.templatetags.sagepay_tags,oscar.templatetags.sagepay_tags,haystack.templatetags.sagepay_tags,treebeard.templatetags.sagepay_tags,sorl.thumbnail.templatetags.sagepay_tags
+ERROR 2013-10-04 19:18:23,719 base Internal Server Error: /checkout/payment-details/
+Traceback (most recent call last):
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/response.py", line 80, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/response.py", line 56, in resolve_template
+    return loader.select_template(template)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 188, in select_template
+    return get_template(template_name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 135, in find_template
+    source, display_name = loader(name, dirs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 157, in get_template_from_string
+    return Template(source, origin, name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/debug_toolbar/panels/template.py", line 37, in new_template_init
+    old_template_init(self, template_string, origin, name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 274, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 215, in do_extends
+    nodelist = parser.parse()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 274, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 190, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 272, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 327, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'CheckoutModeBanner', expected 'endblock'
+ERROR 2013-10-04 19:20:33,093 base Internal Server Error: /checkout/payment-details/
+Traceback (most recent call last):
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/response.py", line 80, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/response.py", line 56, in resolve_template
+    return loader.select_template(template)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 188, in select_template
+    return get_template(template_name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 135, in find_template
+    source, display_name = loader(name, dirs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 157, in get_template_from_string
+    return Template(source, origin, name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/debug_toolbar/panels/template.py", line 37, in new_template_init
+    old_template_init(self, template_string, origin, name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 274, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 215, in do_extends
+    nodelist = parser.parse()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 274, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 190, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 272, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 327, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'CheckoutModeBanner', expected 'endblock'
+ERROR 2013-10-04 19:20:42,263 base Internal Server Error: /checkout/payment-details/
+Traceback (most recent call last):
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/response.py", line 80, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/response.py", line 56, in resolve_template
+    return loader.select_template(template)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 188, in select_template
+    return get_template(template_name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 135, in find_template
+    source, display_name = loader(name, dirs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader.py", line 157, in get_template_from_string
+    return Template(source, origin, name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/debug_toolbar/panels/template.py", line 37, in new_template_init
+    old_template_init(self, template_string, origin, name)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 274, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/loader_tags.py", line 215, in do_extends
+    nodelist = parser.parse()
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 272, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/user/Documents/workspace/django-oscar-sagepay/django-env/lib/python2.7/site-packages/django/template/base.py", line 328, in invalid_block_tag
+    raise self.error(token, "Invalid block tag: '%s'" % command)
+TemplateSyntaxError: Invalid block tag: 'CheckoutModeBanner'

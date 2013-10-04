@@ -1,7 +1,10 @@
 {% extends 'oscar/checkout/payment_details.html' %}
 {% load i18n %}
+{% load checkout_mode_tag %}
+
 
 {% block payment_details_content %}
+{% banner %}
 
 <form action="{% url 'checkout:preview' %}" class="form-stacked" method="POST">
 <table>
@@ -10,8 +13,5 @@
 <tr><td><button type="submit" value="{% trans "Continue" %}" class="btn btn-primary btn-large">{% trans "Continue" %}</button></td></tr>
 </table>
 </form>
-
-
-
 
 {% endblock %}

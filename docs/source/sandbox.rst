@@ -1,4 +1,3 @@
-===================
 Testing in Sandbox
 ===================
 
@@ -15,7 +14,7 @@ To run the plugin in sandbox mode please perform the following steps::
     $ make clean
 
 ===================================
-Sage Pay Test Credit Card Numbers
+SagePay Test Credit Card Numbers
 ===================================
 
 This is a list of the SagePay test credit card numbers you can use to test transactions
