@@ -1,5 +1,9 @@
-Installation Guide
-===================
+Installation and Configuration Guide
+======================================
+
+-----------------------
+Installing Package
+-----------------------
 
 To get the latest stable release from PyPi::
 

@@ -28,4 +28,3 @@ Another example would be to add the custom tag the payment details template::
     </form>
     {% endblock %}
 
-    

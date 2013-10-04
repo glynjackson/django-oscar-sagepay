@@ -1,6 +1,10 @@
 Testing in Sandbox
 ===================
 
+============================
+Sandbox Installation
+============================
+
 At the time of writing this django-oscar does not have a pip install for version 0.6 or above. Because of this
 I have removed django-oscar from the setup.py list of requirements. You will need to first install
 Oscar 0.6 directly from github i.e. ``git clone git@github.com:tangentlabs/django-oscar.git``.
