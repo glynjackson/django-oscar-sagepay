@@ -97,15 +97,16 @@ Once this has been created you will be given the following...</p>
 </div>
 <div class="section" id="integration-into-checkout">
 <h2>Integration into checkout<a class="headerlink" href="#integration-into-checkout" title="Permalink to this headline">¶</a></h2>
-<p>You&#8217;ll need to use a subclass of oscar.apps.checkout.views.PaymentDetailsView within your own checkout views.
-See Oscar&#8217;s documentation on how to create a local version of the checkout app.</p>
-<p>Once PaymentDetailsView has been added in your checkout view add:</p>
+<p>You will first need to create a local version of Oscar&#8217;s checkout app.
+See Oscar&#8217;s documentation on how to create a local version.</p>
+<p>You&#8217;ll then need to use a subclass of sagepay.views.SagePayDetailsView within your own checkout views.:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">sagepay.views</span> <span class="kn">import</span> <span class="n">SagePayDetailsView</span>
 
 <span class="k">class</span> <span class="nc">PaymentDetailsView</span><span class="p">(</span><span class="n">SagePayDetailsView</span><span class="p">):</span>
     <span class="k">pass</span>
 </pre></div>
 </div>
+<p>SagePayDetailsView is actually a subclass of Oscar&#8217;s own oscar.apps.checkout.views.PaymentDetailsView class.</p>
 </div>
 </div>
 

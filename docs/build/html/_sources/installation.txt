@@ -44,7 +44,6 @@ Once this has been created you will be given the following...
 * User Name
 * Password
 
-
 Add the settings from the details you were given::
 
     SAGEPAY_VENDOR = 'YOUR_VENDOR_NAME'
@@ -54,21 +53,20 @@ Add the settings from the details you were given::
     # Options are Live, Test and Simulator
     SAGEPAY_MODE = 'Simulator'
 
-
 Note that both currency and protocol are optional settings, if not set defaults will be used.
-
 
 --------------------------
 Integration into checkout
 --------------------------
 
-You'll need to use a subclass of oscar.apps.checkout.views.PaymentDetailsView within your own checkout views.
-See Oscar's documentation on how to create a local version of the checkout app.
+You will first need to create a local version of Oscar's checkout app.
+See Oscar's documentation on how to create a local version.
 
-Once PaymentDetailsView has been added in your checkout view add::
-
+You'll then need to use a subclass of sagepay.views.SagePayDetailsView within your own checkout views.::
 
     from sagepay.views import SagePayDetailsView
 
     class PaymentDetailsView(SagePayDetailsView):
         pass
+
+SagePayDetailsView is actually a subclass of Oscar's own oscar.apps.checkout.views.PaymentDetailsView class.
